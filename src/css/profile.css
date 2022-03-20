@@ -1,0 +1,59 @@
+@keyframes showProflieFrame {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showQuotes {
+    from{
+transform: translateY(-80%);
+opacity: 0;
+    }
+    to{
+opacity: 1;
+transform: translateY(-100%);
+    }
+}
+
+.profile-frame {
+  justify-content: center;
+  display: flex;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+}
+
+.proflie-frame__photo {
+  width: 150px;
+  height: 150px;
+  margin: 25px 0 0 0;
+  border-radius: 75px;
+  overflow: hidden;
+}
+
+.proflie-frame__photo >div {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.quote{
+    display: inline-block;
+position: absolute;
+top: 100%;
+transform: translateY(-100%);
+box-sizing: border-box;
+padding: 10px;
+text-align: center;
+font-weight: 600;
+}
+.quote div{
+margin : 5px 0 5px 0 ;
+}

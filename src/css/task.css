@@ -1,0 +1,179 @@
+@keyframes showTaskFrame {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.task-frame {
+  width: 75%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 10px 0 0;
+  border-radius: 25px;
+}
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  width: 330px;
+  height: 30px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 20px;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%);
+}
+.search-form i {
+  margin-left: 10px;
+}
+
+.search-input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.search-input:focus {
+  outline: none;
+}
+.task-area {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: calc(100% - 41px);
+  height: calc(100% - 90px);
+  box-sizing: border-box;
+  margin: 20px 0 0 20px;
+}
+.todo-frame {
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.todo-form input {
+  width: 100%;
+  border: 0px;
+  font-size: auto;
+  background-color: none;
+}
+.todo-form input:focus {
+  outline: none;
+}
+.divided {
+  width: 100%;
+  margin: 5px 0 10px 0;
+  border-bottom: 2px solid rgba(220, 220, 220, 0.5);
+}
+.todo-list {
+  position: relative;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: calc(100% - 36px);
+  overflow-y: auto;
+}
+.todo-list div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px 5px 5px;
+  font-weight: 600;
+}
+.todo-list div > div > span {
+  margin-right: 5px;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.todo-icon{
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.todo-icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.task-column{
+  width: calc(55% - 10px);
+  height: 100%;
+  background-color: white;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.time-frame{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin: 0 0 10px 0;
+  background-color: rgba(220, 220, 220, 0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.clock{
+  margin: 0 10px 0 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.time-frame h2{
+  display: block;
+}
+.weather-frame{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: calc(50% - 10px);
+  background-color: rgba(220, 220, 220, 0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.weather-frame__column{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+.weather-frame__column i,
+.weather-frame__column > div{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.weather-frame__div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
